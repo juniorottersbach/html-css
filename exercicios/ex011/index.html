@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>teste de imagens em tres tamanhos pra ver se o site se adapta</p>
+    <picture> <!--deve ser feito em order crescente, ou seja, da menor imagem para a maior-->
+        <source media="(max-width: 750px)" srcset="imgs/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/img-m.png" type="image/png">
+        <img src="imgs/img-g.png" alt="foto grande">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>testando a reproduaçao de audio usando html puro</p>
+    <audio preload="metadata" controls> <!--tomar cuidado com o preload, pois ele pode tornar seu site lento-->
+        <source src="midia/tdjd.mp3" type="audio/mpeg">
+        <source src="midia/tdjd.ogg" type="audio/ogg">
+        <source src="midia/tdjd.wave" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir audio. <a href="midia/tdjd.mp3"></a>Clique aqui para baixar o arquivo MP3</p>
+    </audio>    
+</body>
+</html>

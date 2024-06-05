@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses em HTML</title>
+    <style>
+        body {
+            font-size: 2em;
+        }
+        div {
+            display: inline-block;
+            background-color: lightgrey;
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover {
+            background-color: red;
+            
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        01
+        <p>tum</p>
+    </div>
+    <div id="div2">
+        02
+        <p>tum</p>
+    </div>
+    <div id="div3">
+        03
+        <p>tum</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Teste';
+            src: url('teste.otf') format('opentype') url('teste.ttf') format('truetype');
+        }
+        body {
+            font-family: monospace;
+            font-size: 2em;
+        }
+        h1 {
+            font-family: 'Teste', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur facere accusantium delectus blanditiis necessitatibus aut minus impedit consectetur placeat alias. Reprehenderit aspernatur cumque quas explicabo rerum doloribus maiores illo ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis laboriosam cupiditate aliquam voluptatibus quas debitis laborum officia, tempora ipsa asperiores magnam ipsum? Ducimus error impedit alias totam? Voluptatum, ea.</p>
+</body>
+</html>
