@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando com flex</title>
+    <style>
+        body {
+            height: 95vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: black;
+        }
+        #container {
+            height: 75%;
+            width: 75%;
+            background-color: gray;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.185);
+        }
+        #conteudo {
+            height: 50%;
+            width: 50%;
+            background-color: lightgray;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.185);
+        }
+        #conteudo > p {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <p>Teste</p>
+        </article>
+    </section>
+</body>
+</html>
