@@ -4,7 +4,7 @@
 :root {
     --fonte1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fonte2: "Rubik", sans-serif;
-    --fonte3: font-family: "Rubik Mono One", monospace;
+    --fonte3: "Rubik Mono One", monospace;
 }
 * {
     margin: 0px;
