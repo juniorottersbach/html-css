@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            height: 98vh;
+        }
+        main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            height: 500px;
+            width: 500px;
+        }
+        td {
+            color: white;
+            text-shadow: 0px 0px 5px black;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .abcdef {
+            background-color: green;
+        }
+        .hijkl {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <tr>
+                <td class="abcdef" rowspan="4">A</td>
+                <td class="abcdef" colspan="4">B</td>
+                <td class="hijkl">L</td>
+            </tr>
+            <tr>
+                <td class="abcdef" rowspan="3">C</td>
+                <td class="abcdef" colspan="3">D</td>
+                <td class="hijkl">K</td>
+            </tr>
+            <tr>
+                <td class="abcdef" rowspan="2">E</td>
+                <td class="abcdef" colspan="2">F</td>
+                <td class="hijkl">J</td>
+            </tr>
+            <tr>
+                <td class="hijkl">G</td>
+                <td class="hijkl">H</td>
+                <td class="hijkl">I</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

@@ -21,6 +21,13 @@
             width: 600px;
             border-collapse: collapse;
         }
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
         caption {
             font-size: 2em;
             color: white;
@@ -30,7 +37,7 @@
             border: 1px solid black;
             padding: 5px;
         }
-        td {
+        tr {
             background-color: lightblue;
         }
         th {
