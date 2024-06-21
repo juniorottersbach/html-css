@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Sexo: </legend>
+            <input type="radio" name="sexo" id="isexf" value="M"><label for="isexf"> Mulher</label>
+            <input type="radio" name="sexo" id="isexm" value="H"><label for="isexm"> Homem</label>
+        </fieldset>
+        <fieldset>
+            <legend>Comida Favorita</legend>
+            <input type="checkbox" name="cfpiz" id="icfpiz"><label for="icfpiz"> Pizza</label><br>
+            <input type="checkbox" name="cfham" id="icfham"><label for="icfham"> Hambúrguer</label><br>
+            <input type="checkbox" name="cffra" id="icffra"><label for="icffra"> Frango empanado</label><br>
+            <input type="checkbox" name="cfchu" id="icfchu"><label for="icfchu"> Churrasco</label><br>
+            <input type="checkbox" name="cfbat" id="icfbat"><label for="icfbat"> Batata frita</label><br>
+            <input type="checkbox" name="cfsus" id="icfsus"><label for="icfsus"> Sushi</label><br>
+            <input type="checkbox" name="cftem" id="icftem"><label for="icftem"> Temaki</label><br>
+            <input type="checkbox" name="cfcha" id="icfcha"><label for="icfcha"> Charuto</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
