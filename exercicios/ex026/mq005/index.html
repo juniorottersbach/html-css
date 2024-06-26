@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query e menu responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Site exemplo</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de Media Query</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet consequuntur, deleniti voluptatum illo ratione ex commodi eligendi numquam nulla dignissimos tempora nesciunt dolores quos minima quia accusamus neque excepturi sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, dolorem! Odit, blanditiis quidem tempora ducimus adipisci asperiores fuga consectetur et expedita sapiente odio nostrum dolor doloremque ratione quam, nam suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores quasi iste quaerat, sunt id asperiores velit quae quos eius sapiente debitis delectus, illo repellat ipsa rem aspernatur voluptatum hic.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur repudiandae tenetur, vel cumque illo exercitationem recusandae itaque quos cum, corrupti quisquam fugiat atque numquam non. Sunt modi cupiditate vero quos? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit iusto dolore vel non, laboriosam officia inventore alias porro hic aliquid animi beatae omnis consequatur, maiores velit aperiam a eius nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia pariatur esse iusto eum sed laboriosam molestias eius asperiores nulla, a, labore hic culpa repudiandae nemo amet, dignissimos saepe voluptas neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ex. Cupiditate reprehenderit quasi error eligendi repellat voluptas quo accusamus? Dolore doloribus illum sed nulla minus excepturi animi veritatis ad non?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aliquid neque temporibus iure error voluptatem facilis odio, cumque perferendis aut fuga vitae recusandae fugiat deleniti incidunt! Eligendi accusantium est impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, neque sapiente. Distinctio reiciendis in natus, quae nesciunt repellat, quisquam unde accusamus rerum perferendis ullam facere optio id officiis alias possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia a nesciunt doloribus error sapiente voluptatum ipsa magni, similique eligendi id sint. Debitis at eaque eveniet quisquam natus minima quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus saepe reprehenderit illum corporis modi. Vero ducimus non vitae animi corrupti alias explicabo id iste cupiditate cum? Nulla libero pariatur iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui numquam animi possimus architecto iste? Blanditiis eum sit adipisci sunt. Nobis consequuntur delectus voluptas, voluptates libero provident unde maiores aspernatur! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam fugiat nemo beatae totam alias porro quam quo quod odit rem, repellendus ut! Illum excepturi ducimus vitae fugit debitis veniam culpa?</p>
+        </article>
+    </main>
+    <script>
+    function clickMenu() {
+        // var itens = document.getElementById("itens");
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none';
+        } else {
+            itens.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+</html>

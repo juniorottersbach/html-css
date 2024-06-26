@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* todas as demais midias */
+/* typical devide breakpoint
+    telas pequenas: ate 600px
+    celular: 600px ate 768px
+    tablet: 768px ate 992px
+    desktop: 992px ate 1200px
+    telas grandes: acima de 1200px */
+/* como o exercicio foi feito pensando em mobile first, nao ha necessidade de fazer telas pequenas e celulares */
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /* background não sai em impressora */
+    }
+    main {
+        border: 2px solid black;
+    }
+    img#cel {display: none;}
+    img#tab {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg); 
+    }
+    img#cel {display: none;}
+    img#tab {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    }
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#cel {display: none;}
+    img#tab {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+@media screen and (min-width: 1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#cel {display: none;}
+    img#tab {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+
+}
