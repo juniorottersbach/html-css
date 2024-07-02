@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box (Flex box)</title>
+    <style>
+        div.container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: lightgrey;
+        }
+        div.container2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: lightgrey;
+        }
+        div.container3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            background-color: lightgrey;
+        }
+        div.container4 {
+            display: flex;
+            flex-flow: row-reverse wrap;
+            background-color: lightgrey;
+        }
+        div.container5 {
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+            background-color: lightgrey;
+        }
+        div.item {
+            /* flex: auto; */
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>wrap</h1>
+    <div class="container">
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
+        <div class="item">Exemplo de bloco 7</div>
+        <div class="item">Exemplo de bloco 8</div>
+        <div class="item">Exemplo de bloco 9</div>
+        <div class="item">Exemplo de bloco 10</div>
+    </div>
+    <h1>nowrap</h1>
+    <div class="container2">
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
+        <div class="item">Exemplo de bloco 7</div>
+        <div class="item">Exemplo de bloco 8</div>
+        <div class="item">Exemplo de bloco 9</div>
+        <div class="item">Exemplo de bloco 10</div>
+    </div>
+    <h1>wrap-reverse</h1>
+    <div class="container3">
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
+        <div class="item">Exemplo de bloco 7</div>
+        <div class="item">Exemplo de bloco 8</div>
+        <div class="item">Exemplo de bloco 9</div>
+        <div class="item">Exemplo de bloco 10</div>
+    </div>
+    <h1>row-reverse + wrap</h1>
+    <div class="container4">
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
+        <div class="item">Exemplo de bloco 7</div>
+        <div class="item">Exemplo de bloco 8</div>
+        <div class="item">Exemplo de bloco 9</div>
+        <div class="item">Exemplo de bloco 10</div>
+    </div>
+    <h1>row-reverse + reverse-wrap</h1>
+    <div class="container5">
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
+        <div class="item">Exemplo de bloco 7</div>
+        <div class="item">Exemplo de bloco 8</div>
+        <div class="item">Exemplo de bloco 9</div>
+        <div class="item">Exemplo de bloco 10</div>
+    </div>
+</body>
+</html>
