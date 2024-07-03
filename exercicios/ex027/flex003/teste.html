@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste alinhamento central</title>
+    <style>
+        div.container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.f1 {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        div.f2 {
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        div.f3 {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        div.f4 {
+            height: 10px;
+            width: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="f1">
+            <div class="f2">
+                <div class="f3">
+                    <div class="f4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
